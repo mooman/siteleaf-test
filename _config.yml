@@ -1,0 +1,30 @@
+---
+title: Garden Grove
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  rv-permit:
+    title: RV Permit
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+    colors:
+    - red
+    - green
+    - blue
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
